@@ -20,7 +20,7 @@ spec:
       - name: "nginx-1"
         image: "nginx:latest"
       - name: "clinicaapi-2"
-        image: "gcr.io/clinica-410702/github.com/bi-dall/clinicaapi:$SHORT_SHA"
+        image: "gcr.io/clinica-410702/github.com/bi-dall/clinica-api-deployment"
 ---
 apiVersion: "autoscaling/v2"
 kind: "HorizontalPodAutoscaler"

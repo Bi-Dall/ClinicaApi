@@ -53,14 +53,14 @@ namespace ClinicaAPI.Controllers
                 smartUser.senhaProv = null;
                 return smartUser; }
             else if (provtUser != null) {
-                smartUser.senhaHash = smartUser.senhaProv;
+                provtUser.senhaHash = provtUser.senhaProv;
                 return provtUser; }
             else return null;
 
             //if (smartUser == null) return null; else return smartUser;
         }
         private string GerarTokenJWT(UserModel smartUser)
-        {     //Incluir informa;óes de usuário
+        {    
 
             var _config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

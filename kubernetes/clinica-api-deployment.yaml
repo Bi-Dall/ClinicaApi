@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
       - name: "clinica-api"
-        image: "gcr.io/clinica-410702/github.com/bi-dall/clinica-api-deployment"
+        image: "gcr.io/clinica-410702/github.com/bi-dall/clinicaapi"
 

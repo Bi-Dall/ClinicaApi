@@ -17,9 +17,7 @@ spec:
         app: "clinica-api"
     spec:
       containers:
-      - name: "nginx-1"
-        image: "nginx:latest"
-      - name: "clinicaapi-2"
+      - name: "clinica-api"
         image: "gcr.io/clinica-410702/github.com/bi-dall/clinica-api-deployment"
 ---
 apiVersion: "autoscaling/v2"
